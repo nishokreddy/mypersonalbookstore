@@ -38,6 +38,11 @@ public class BookController {
 		model.addAttribute("book", book);
 		return "bookRegister";
 	}
+
+	@GetMapping("/test")
+	public String getText(){
+		return "MyText";
+	}
 	
 	@GetMapping("/available_books")
 	public ModelAndView getAllBook() {
